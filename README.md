@@ -1,10 +1,8 @@
 # FBI Most Wanted
 
 ## Information:
-* Author: Sarah, Hadrian und Jasmin
+* Author: Sarah, Hadrian & Jasmin
 * Class: WDD320
-* Purpose : Exercise GIT
+* Purpose: Exercise GIT
 
 ---
-
-:rocket:
