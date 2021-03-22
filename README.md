@@ -1,4 +1,4 @@
-# FBI Most Wanted
+# NASA Picture of the day
 
 ## Information:
 * Author: Sarah, Hadrian & Jasmin
