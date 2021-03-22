@@ -5,6 +5,8 @@ body {
 h1 {
   color: beige;
   font-family: 'Smokum', cursive;
+  font-size: 4rem;
+  text-align: center;
   text-transform: uppercase;
-  letter-spacing: 3px;
+  letter-spacing: 4px;
 }
