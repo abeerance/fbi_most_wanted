@@ -10,14 +10,73 @@
 
 body {
   background-color: black;
+  background-image: url(data/space.png);
+  background-size: 250%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#nasa-logo {
+  width: 300px;
+  margin-top: 3rem;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 h1 {
-  color: beige;
-  font-family: 'Smokum', cursive;
-  font-size: 4rem;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3.5rem;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 4px;
-  margin-top: 4rem;
+  margin: 4rem 0;
+  text-decoration: underline;
+}
+
+#container {
+  width: 100vw;
+  padding: 0 5rem;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 2rem;
+  grid-auto-rows: minmax(100px, auto);
+}
+
+.card{
+  width: 100%;
+  background-color: white;
+  width: 1fr;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.card h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 1rem;
+  text-transform: uppercase;
+}
+
+.card p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  font-weight: lighter;
+  margin-top: 0.5rem;
+}
+
+.card img {
+  width: 100%;
+  height: auto
+}
+
+.copyright {
+  font-size: 0.5rem;
 }
