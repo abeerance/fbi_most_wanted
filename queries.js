@@ -41,15 +41,4 @@ $(document).ready(function () {
             console.log('you must write a number in the box')
         }
     }
-
-    button.click(function(e) {
-
-        countPictures = document.querySelector('#counter').value
-        if(countPictures === NaN){
-            console.log('not a number')
-        }
-        else{
-            
-        }
-    })
 })
