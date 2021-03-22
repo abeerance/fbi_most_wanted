@@ -10,12 +10,15 @@
 
 body {
   background-color: black;
+  background-image: url(data/space.png);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 h1 {
-  color: beige;
-  font-family: 'Smokum', cursive;
-  font-size: 4rem;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3rem;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 4px;
@@ -23,7 +26,7 @@ h1 {
 }
 
 #container {
-  width: 100%;
+  width: 100vw;
   padding: 0 5rem;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -31,13 +34,10 @@ h1 {
   grid-auto-rows: minmax(100px, auto);
 }
 
-.wanted-person{
+.card{
   width: 100%;
-  background-color: beige;
+  background-color: white;
   width: 1fr;
-  background-image: url(data/paper.jpg);
-  background-size: cover;
-  background-position: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -45,15 +45,15 @@ h1 {
   padding: 1rem;
 }
 
-.wanted-person h2 {
-  font-family: 'Smokum', cursive;
+.card h2 {
+  font-family: 'Montserrat', sans-serif;
   font-size: 1.7rem;
   text-align: center;
   letter-spacing: 1px;
   margin: 1rem 0;
 }
 
-.wanted-person img {
+.card img {
   width: 150px;
   height: 150px;
 }
