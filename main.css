@@ -17,9 +17,9 @@ body {
 }
 
 #nasa-logo {
-  width: 300px;
-  margin-top: 3rem;
-  position: absolute;
+  width: 400px;
+  margin-top: 10rem;
+  position: relative;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -27,11 +27,12 @@ body {
 h1 {
   color: white;
   font-family: 'Montserrat', sans-serif;
-  font-size: 3.5rem;
+  font-size: 3rem;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 4px;
-  margin: 4rem 0;
+  margin-top: -5rem;
+  margin-bottom: 3rem;
   text-decoration: underline;
 }
 
@@ -77,6 +78,44 @@ h1 {
   height: auto
 }
 
-.copyright {
-  font-size: 0.5rem;
+
+
+
+/* Media Querys */
+@media only screen and (max-width: 1000px) {
+  body {
+    background-image: url(data/space.png);
+    background-size: 400%;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  #container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+    grid-auto-rows: minmax(100px, auto);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-image: url(data/space.png);
+    background-size: 1000%;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  #container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    grid-auto-rows: minmax(100px, auto);
+  }
 }
