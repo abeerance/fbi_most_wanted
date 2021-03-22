@@ -8,17 +8,18 @@ var requestOptions = {
     // .then(data => console.log(data))
     .then(data => {
 
-      data.forEach(object => {
+      data.forEach(element => {
         const card = document.createElement('div')
         card.classList.add('card')
       
         const template = `
-        <img class='image'> ${object.url} </img>
-        <p class='title'> ${object.title} </p>
-        <p class='date'> ${object.date} </p>
+        <img class='image'> ${element.url} </img>
+        <p class='title'> ${element.title} </p>
+        <p class='date'> ${element.date} </p>
         `
       
         card.innerHTML = template
         document.querySelector('#container').appendChild(card)
       });
     })
+  .catch(error => console.log('error', error));
