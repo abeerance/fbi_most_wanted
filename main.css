@@ -101,8 +101,9 @@ button {
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   outline: none;
-  background: rgb(235, 57, 25);
+  background: rgb(236, 48, 14);
   color: white;
+  transition: all 0.3s ease;
 }
 
 button:hover {
