@@ -19,5 +19,41 @@ h1 {
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 4px;
-  margin-top: 4rem;
+  margin: 4rem 0;
+}
+
+#container {
+  width: 100%;
+  padding: 0 5rem;
+  display: grid;
+  grid-template-columns: 250px;
+  grid-template-rows: 250px;
+  grid-gap: 24px;
+}
+
+.wanted-person{
+  width: 100%;
+  background-color: beige;
+  width: 1fr;
+  background-image: url(data/paper.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.wanted-person h2 {
+  font-family: 'Smokum', cursive;
+  font-size: 1.7rem;
+  text-align: center;
+  letter-spacing: 1px;
+  margin: 1rem 0;
+}
+
+.wanted-person img {
+  width: 150px;
+  height: 150px;
 }
