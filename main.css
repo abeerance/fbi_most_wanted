@@ -14,6 +14,8 @@ body {
   background-size: 250%;
   background-position: center;
   background-repeat: no-repeat;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 #nasa-logo {
