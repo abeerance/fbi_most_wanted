@@ -11,15 +11,23 @@
 body {
   background-color: black;
   background-image: url(data/space.png);
-  background-size: 200%;
+  background-size: 250%;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+#nasa-logo {
+  width: 300px;
+  margin-top: 3rem;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 h1 {
   color: white;
   font-family: 'Montserrat', sans-serif;
-  font-size: 3rem;
+  font-size: 3.5rem;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 4px;
@@ -58,6 +66,7 @@ h1 {
 }
 
 .card p {
+  font-family: 'Montserrat', sans-serif;
   font-size: 1rem;
   font-weight: lighter;
   margin-top: 0.5rem;
@@ -66,4 +75,8 @@ h1 {
 .card img {
   width: 100%;
   height: auto
+}
+
+.copyright {
+  font-size: 0.5rem;
 }
