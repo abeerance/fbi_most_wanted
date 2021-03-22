@@ -3,9 +3,9 @@ var requestOptions = {
     redirect: 'follow'
   };
   
-  fetch("https://api.nasa.gov/planetary/apod?api_key=lfgYSAttcNLMTq4Z04eeVldbx3PK83pSrufWlYFA", requestOptions)
+  fetch("https://api.nasa.gov/planetary/apod?api_key=lfgYSAttcNLMTq4Z04eeVldbx3PK83pSrufWlYFA&count=50", requestOptions)
     .then(response => response.json())
-    .then(data => console.log(data))
+    // .then(data => console.log(data))
     .then(data => {
 
       data.forEach(object => {
@@ -20,6 +20,5 @@ var requestOptions = {
       
         card.innerHTML = template
         document.querySelector('#container').appendChild(card)
-
       });
     })
