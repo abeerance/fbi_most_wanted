@@ -1,0 +1,10 @@
+body {
+  background-color: black;
+}
+
+h1 {
+  color: beige;
+  font-family: 'Smokum', cursive;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
