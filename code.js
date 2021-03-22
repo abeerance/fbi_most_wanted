@@ -1,9 +1,13 @@
-// fetch Javascript (EMPFOHLEN)
-fetch('https://api.fbi.gov/wanted/v1/list')
-.then(response => response.json())
-.then(data => {
-    // for each user in data
-    data.forEach(user => {
+var myHeaders = new Headers();
+myHeaders.append("Cookie", "__cfduid=d408c4edd901f9b56462f21746d6e1a3a1616428691");
 
-    });
-})
+var requestOptions = {
+  method: 'GET',
+  headers: myHeaders,
+  redirect: 'follow'
+};
+
+fetch("https://api.fbi.gov/wanted/v1/list", requestOptions)
+  .then(response => response.text())
+  .then(result => console.log(result))
+  .catch(error => console.log('error', error));
